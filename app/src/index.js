@@ -18,8 +18,6 @@ app.post("/api/login", (req, res) => {
   console.log("Name:", Name);
   console.log("Password:", Password);
 
-  // You can perform any additional logic or database operations here
-
   res.send("Login request received");
 });
 

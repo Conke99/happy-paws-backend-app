@@ -1,0 +1,41 @@
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build output
+dist/
+build/
+out/
+
+# Coverage output
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Environment variables
+.env
+
+# Operating System files
+Thumbs.db
+.DS_Store
+
+# Miscellaneous
+*.swp
+*.swo
+*.bak
+*.tmp
+*.tmp.*
+*~
