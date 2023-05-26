@@ -2,19 +2,40 @@
   "name": "pets-care",
   "version": "1.0.0",
   "description": "Application for users that have pets",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "migrate-db": "sequelize-cli db:migrate"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-session": "^2.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^9.0.0",
+    "module-alias": "^2.2.2",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
     "sequelize": "^6.31.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "^6.6.0"
+  },
+  "_moduleAliases": {
+    "@utils": "./src/utils",
+    "@sequelize": "./src/sequelize",
+    "@config": "./src/config",
+    "@routes": "./src/routes",
+    "@populate": "./src/populate",
+    "@models": "./src/models"
   },
   "author": "Aleksandar Conic"
 }
